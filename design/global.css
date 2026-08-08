@@ -29,10 +29,6 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   min-height: 100vh;
   background-color: var(--color-white);
@@ -83,4 +79,61 @@ img {
 /* Images */
 .img-container {
   width: min(64px, 100%);
+}
+
+/* Mobile First Approach design rules */
+/* Title wrapper */
+.title-wrapper {
+  width: min(500px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-200);
+  margin-inline: auto;
+}
+
+.cards-wrapper {
+  width: min(300px, 100%);
+  display: grid;
+  grid-template-columns: minmax(1fr, 100%);
+  grid-template-rows: auto;
+  justify-content: center;
+  gap: var(--spacing-400);
+  margin: var(--spacing-500) auto;
+}
+
+.content-wrapper {
+  display: grid;
+  gap: var(--spacing-400);
+}
+
+.content {
+  padding: var(--spacing-400);
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-400);
+  border-radius: var(--spacing-100);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cards-wrapper > .content:nth-child(1) {
+  border-top: 6px solid var(--color-cyan);
+}
+
+.content-wrapper > .content:nth-child(1) {
+  border-top: 6px solid var(--color-red);
+}
+
+.content-wrapper > .content:nth-child(2) {
+  border-top: 6px solid var(--color-orange);
+}
+
+.cards-wrapper > .content:nth-child(3) {
+  border-top: 6px solid var(--color-blue);
+}
+
+.content .img-container {
+  align-self: flex-end;
 }
