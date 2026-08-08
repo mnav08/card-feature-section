@@ -1,0 +1,86 @@
+:root {
+  /* Colors */
+  --color-grey-500: #4d4f62;
+  --color-grey-400: #6a7178;
+  --color-white: #ffffff;
+  --color-red: #ea5454;
+  --color-cyan: #44d3d2;
+  --color-blue: #549ef2;
+  --color-orange: #fcae4a;
+
+  /* Spacing */
+  --spacing-100: 0.5rem;
+  --spacing-200: 1rem;
+  --spacing-300: 1.5rem;
+  --spacing-400: 2rem;
+  --spacing-500: 2.5rem;
+}
+
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-white);
+  color: var(--color-grey-500);
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* UTILITY CLASSES */
+
+/* TYPOGRAPHY */
+.text-preset-5 {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+.text-preset-4 {
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+.text-preset-3 {
+  font-size: 1.25rem;
+  line-height: 1.35;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+.text-preset-2 {
+  font-size: 2.25rem;
+  line-height: 1.4;
+  letter-spacing: 0.25px;
+  font-weight: 200;
+}
+.text-preset-1 {
+  font-size: 2.25rem;
+  line-height: 1.4;
+  letter-spacing: 0.25px;
+  font-weight: 600;
+}
+
+/* Images */
+.img-container {
+  width: min(64px, 100%);
+}
