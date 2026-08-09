@@ -43,6 +43,14 @@ img {
   max-width: 100%;
 }
 
+a {
+  color: var(--color-grey-500);
+}
+a:hover {
+  color: var(--color-orange);
+  cursor: pointer;
+}
+
 /* UTILITY CLASSES */
 
 /* TYPOGRAPHY */
