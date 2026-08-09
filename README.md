@@ -13,8 +13,6 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -81,5 +79,5 @@ In addition learned how to remove from the layout a parent container that is nes
 
 Moises N 💙🕸️
 
-- Website - [https://mnav08.github.io/portfolio-website/]()
-- Frontend Mentor - [@mnav08]()
+- Website - [https://mnav08.github.io/portfolio-website/](https://mnav08.github.io/portfolio-website/)
+- Frontend Mentor - [@mnav08](@mnav08)
