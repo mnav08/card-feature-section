@@ -1,0 +1,44 @@
+@import url(./global.css);
+
+/* TABLET DEVICES DESIGN */
+@media (min-width: 48rem) {
+  .flex-col {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .content {
+    padding: var(--spacing-200);
+  }
+}
+
+/* Desktop design */
+@media (min-width: 64rem) {
+  .flex-col {
+    display: contents;
+  }
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--spacing-400);
+    justify-content: center;
+    grid-template-areas:
+      ". team ."
+      "sup calcu karma";
+  }
+  .cards-wrapper > .content:nth-child(1) {
+    grid-area: sup;
+  }
+
+  .flex-col > .content:nth-child(1) {
+    grid-area: team;
+  }
+
+  .flex-col > .content:nth-child(2) {
+    grid-area: calcu;
+  }
+
+  .cards-wrapper > .content:nth-child(3) {
+    grid-area: karma;
+  }
+}
